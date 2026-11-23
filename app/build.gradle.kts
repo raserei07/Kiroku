@@ -69,6 +69,17 @@ dependencies {
     ksp(libs.hilt.compiler)
     implementation(libs.androidx.hilt.navigation.compose)
 
+    // Room & SQLCipher Encryption
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.android.database.sqlcipher)
+    implementation(libs.androidx.sqlite.ktx)
+
+    // DataStore Preferences & Security Crypto
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.security.crypto)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

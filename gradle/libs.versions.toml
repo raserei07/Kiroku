@@ -5,6 +5,10 @@ kotlin = "2.0.0"
 ksp = "2.0.0-1.0.24"
 hilt = "2.51.1"
 hiltNavigationCompose = "1.2.0"
+room = "2.6.1"
+sqlcipher = "4.5.4"
+datastore = "1.1.1"
+securityCrypto = "1.1.0-alpha06"
 coreKtx = "1.16.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -36,6 +40,13 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
 hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+android-database-sqlcipher = { module = "net.zetetic:android-database-sqlcipher", version.ref = "sqlcipher" }
+androidx-sqlite-ktx = { module = "androidx.sqlite:sqlite-ktx", version = "2.4.0" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx-security-crypto = { module = "androidx.security:security-crypto", version.ref = "securityCrypto" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]

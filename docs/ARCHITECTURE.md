@@ -21,11 +21,12 @@ Kiroku follows **Clean Architecture** principles and a **Unidirectional Data Flo
 ```
 
 ## Tech Stack Choices
-* **Database**: Room Database with SQLCipher encryption.
+* **Database**: Room Database with SQLCipher enterprise-grade encryption (securely keyed via AndroidX Security `EncryptedSharedPreferences`).
+* **Preferences & Settings**: AndroidX DataStore Preferences for reactive user settings (currency symbol, theme mode, biometric lock).
 * **State Management**: `StateFlow` and `UiState` sealed interfaces in ViewModels.
 * **Dependency Injection**: Dagger Hilt with KSP for compile-time dependency injection (`@HiltAndroidApp`, `@AndroidEntryPoint`, `@HiltViewModel`).
 * **Navigation Architecture**: Single-Activity Jetpack Compose Navigation (`KirokuNavHost`) paired with an extensible `AppNavigator` abstraction for modular Activity-to-Activity transitions.
-* **Security**: AndroidX BiometricPrompt for local app security.
+* **Security**: AndroidX BiometricPrompt for local app security & EncryptedSharedPreferences for crypto keys.
 
 ## Navigation & Activity Modularity
 * **Primary Navigation**: Single-Activity Jetpack Compose Navigation (`KirokuNavHost` with type-safe `Screen` destinations).
