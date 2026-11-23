@@ -9,7 +9,6 @@ android {
     compileSdk = 35
     defaultConfig {
         applicationId = "com.example.kiroku"
-        applicationId = "com.example.kiroku"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -34,11 +33,11 @@ android {
         kotlinCompilerExtensionVersion = "1.6.5"
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "21"
     }
 }
 
