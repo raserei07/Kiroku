@@ -16,5 +16,6 @@ This project follows **Intent-Driven Development**. Feature specifications, doma
 * **UI Framework**: Jetpack Compose + Material 3
 * **Database**: Room (SQLCipher encrypted)
 * **Async/State**: Kotlin Coroutines & `StateFlow`
-* **Dependency Injection**: Koin
+* **Dependency Injection**: Dagger Hilt with KSP for compile-time dependency injection (`@HiltAndroidApp`, `@AndroidEntryPoint`, `@HiltViewModel`).
+* **Navigation**: Single-Activity Jetpack Compose Navigation + Modular `AppNavigator` for Activity-to-Activity transitions
 * **Architecture**: Clean Architecture (Presentation -> Domain -> Data)

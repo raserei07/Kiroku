@@ -23,6 +23,6 @@ Kiroku follows **Clean Architecture** principles and a **Unidirectional Data Flo
 ## Tech Stack Choices
 * **Database**: Room Database with SQLCipher encryption.
 * **State Management**: `StateFlow` and `UiState` sealed interfaces in ViewModels.
-* **Dependency Injection**: Koin for lightweight Kotlin-first DI.
+* **Dependency Injection**: Dagger Hilt with KSP for compile-time dependency injection (`@HiltAndroidApp`, `@AndroidEntryPoint`, `@HiltViewModel`).
 * **Navigation**: Single-Activity Jetpack Compose Navigation (`androidx.navigation:navigation-compose`).
 * **Security**: AndroidX BiometricPrompt for local app security.
